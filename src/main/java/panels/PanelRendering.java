@@ -1,5 +1,6 @@
 package panels;
 
+import app.Task;
 import controls.Label;
 import io.github.humbleui.jwm.*;
 import io.github.humbleui.skija.Canvas;
@@ -15,7 +16,10 @@ public class PanelRendering extends GridPanel {
     /**
      * Заголовок
      */
-    private final Label label;
+    /**
+     * Представление проблемы
+     */
+    public static Task task;
 
     /**
      * Панель управления
@@ -38,8 +42,7 @@ public class PanelRendering extends GridPanel {
         super(window, drawBG, color, padding, gridWidth, gridHeight, gridX, gridY, colspan, rowspan);
 
         // создаём первый заголовок
-        label = new Label(window, false, PANEL_BACKGROUND_COLOR, PANEL_PADDING,
-                1, 1, 0, 0, 1, 1, "Панель рисования", true, true);
+
 
 
     }
@@ -62,6 +65,6 @@ public class PanelRendering extends GridPanel {
      */
     @Override
     public void paintImpl(Canvas canvas, CoordinateSystem2i windowCS) {
-        label.paint(canvas, windowCS);
+
     }
 }
