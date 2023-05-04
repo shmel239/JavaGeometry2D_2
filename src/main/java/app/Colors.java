@@ -10,6 +10,10 @@ public class Colors {
     /**
      * Цвет текста заголовка
      */
+    /**
+     * Цвет текста
+     */
+    public static final int MULTILINE_TEXT_COLOR = Misc.getColor(64, 255, 255, 255);
     public static final int LABEL_TEXT_COLOR = Misc.getColor(64, 255, 255, 255);
     /**
      * цвет подложки панелей
